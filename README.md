@@ -1,1 +1,0 @@
-# Microsoft.Xrm.DevOps.Solutions

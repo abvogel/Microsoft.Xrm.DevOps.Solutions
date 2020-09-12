@@ -1,0 +1,5 @@
+C:\git\repos\Microsoft.Xrm.DevOps.Solutions\Microsoft.Xrm.DevOps.Solutions\bin\Debug\netstandard2.0\Microsoft.Xrm.DevOps.Solutions.deps.json
+C:\git\repos\Microsoft.Xrm.DevOps.Solutions\Microsoft.Xrm.DevOps.Solutions\bin\Debug\netstandard2.0\Microsoft.Xrm.DevOps.Solutions.dll
+C:\git\repos\Microsoft.Xrm.DevOps.Solutions\Microsoft.Xrm.DevOps.Solutions\obj\Debug\netstandard2.0\Microsoft.Xrm.DevOps.Solutions.csprojAssemblyReference.cache
+C:\git\repos\Microsoft.Xrm.DevOps.Solutions\Microsoft.Xrm.DevOps.Solutions\obj\Debug\netstandard2.0\Microsoft.Xrm.DevOps.Solutions.AssemblyInfoInputs.cache
+C:\git\repos\Microsoft.Xrm.DevOps.Solutions\Microsoft.Xrm.DevOps.Solutions\obj\Debug\netstandard2.0\Microsoft.Xrm.DevOps.Solutions.AssemblyInfo.cs

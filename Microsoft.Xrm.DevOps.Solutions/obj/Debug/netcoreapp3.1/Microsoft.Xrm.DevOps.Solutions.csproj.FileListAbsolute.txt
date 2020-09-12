@@ -1,0 +1,9 @@
+C:\git\repos\Microsoft.Xrm.DevOps.Solutions\Microsoft.Xrm.DevOps.Solutions\bin\Debug\netcoreapp3.1\Microsoft.Xrm.DevOps.Solutions.deps.json
+C:\git\repos\Microsoft.Xrm.DevOps.Solutions\Microsoft.Xrm.DevOps.Solutions\bin\Debug\netcoreapp3.1\Microsoft.Xrm.DevOps.Solutions.dll
+C:\git\repos\Microsoft.Xrm.DevOps.Solutions\Microsoft.Xrm.DevOps.Solutions\bin\Debug\netcoreapp3.1\Microsoft.Xrm.DevOps.Solutions.pdb
+C:\git\repos\Microsoft.Xrm.DevOps.Solutions\Microsoft.Xrm.DevOps.Solutions\obj\Debug\netcoreapp3.1\Microsoft.Xrm.DevOps.Solutions.csprojAssemblyReference.cache
+C:\git\repos\Microsoft.Xrm.DevOps.Solutions\Microsoft.Xrm.DevOps.Solutions\obj\Debug\netcoreapp3.1\Microsoft.Xrm.DevOps.Solutions.AssemblyInfoInputs.cache
+C:\git\repos\Microsoft.Xrm.DevOps.Solutions\Microsoft.Xrm.DevOps.Solutions\obj\Debug\netcoreapp3.1\Microsoft.Xrm.DevOps.Solutions.AssemblyInfo.cs
+C:\git\repos\Microsoft.Xrm.DevOps.Solutions\Microsoft.Xrm.DevOps.Solutions\obj\Debug\netcoreapp3.1\Microsoft.Xrm.DevOps.Solutions.csproj.CoreCompileInputs.cache
+C:\git\repos\Microsoft.Xrm.DevOps.Solutions\Microsoft.Xrm.DevOps.Solutions\obj\Debug\netcoreapp3.1\Microsoft.Xrm.DevOps.Solutions.dll
+C:\git\repos\Microsoft.Xrm.DevOps.Solutions\Microsoft.Xrm.DevOps.Solutions\obj\Debug\netcoreapp3.1\Microsoft.Xrm.DevOps.Solutions.pdb
