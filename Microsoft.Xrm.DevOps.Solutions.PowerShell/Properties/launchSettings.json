@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Microsoft.Xrm.DevOps.Solutions.PowerShell": {
+      "commandName": "Executable",
+      "executablePath": "%windir%\\system32\\WindowsPowerShell\\v1.0\\PowerShell_ISE.exe",
+      "commandLineArgs": "debug.ps1"
+    }
+  }
+}

@@ -1,11 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net4.6.2</TargetFramework>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SparkleXRM" Version="7.3.0" />
+    <PackageReference Include="Microsoft.CrmSdk.CoreAssemblies" Version="9.0.2.27" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SparkleXrm\spkl\SparkleXrm.Tasks\SparkleXrm.Tasks.csproj" />
   </ItemGroup>
 
 </Project>

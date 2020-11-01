@@ -1,42 +1,71 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
-      "SparkleXRM/7.3.0": {
+    ".NETFramework,Version=v4.6.2": {
+      "Microsoft.CrmSdk.CoreAssemblies/9.0.2.27": {
         "type": "package",
+        "frameworkAssemblies": [
+          "System.Core",
+          "System.DirectoryServices",
+          "System.DirectoryServices.AccountManagement",
+          "System.IdentityModel",
+          "System.Runtime.Serialization",
+          "System.Security",
+          "System.ServiceModel",
+          "System.ServiceModel.Web",
+          "System.Web",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
         "compile": {
-          "lib/Slick.dll": {},
-          "lib/SparkleXrm.dll": {},
-          "lib/SparkleXrmUI.dll": {}
+          "lib/net462/Microsoft.Crm.Sdk.Proxy.dll": {},
+          "lib/net462/Microsoft.Xrm.Sdk.dll": {}
         },
         "runtime": {
-          "lib/Slick.dll": {},
-          "lib/SparkleXrm.dll": {},
-          "lib/SparkleXrmUI.dll": {}
+          "lib/net462/Microsoft.Crm.Sdk.Proxy.dll": {},
+          "lib/net462/Microsoft.Xrm.Sdk.dll": {}
+        }
+      },
+      "SparkleXrm.Tasks/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/SparkleXrm.Tasks.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SparkleXrm.Tasks.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "SparkleXRM/7.3.0": {
-      "sha512": "w72RAAxlN/h3DNTaypS17veSNzAPZh7PeEUrVf//cBOEO0v9z+oHxueMKshwCH+/sjmYxDbIn4v129q8/LzYHA==",
+    "Microsoft.CrmSdk.CoreAssemblies/9.0.2.27": {
+      "sha512": "ydsQ43/1f8QcSHsA4vr38EAlDzyL5LR504e3/x5W/6x5tyvGrjLpij/0Ruv2gpAiVJDMhByCmjQQsO7SM13azA==",
       "type": "package",
-      "path": "sparklexrm/7.3.0",
+      "path": "microsoft.crmsdk.coreassemblies/9.0.2.27",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "content/SparkleXRM_7_3_0_managed.zip",
-        "lib/Slick.dll",
-        "lib/SparkleXrm.dll",
-        "lib/SparkleXrmUI.dll",
-        "sparklexrm.7.3.0.nupkg.sha512",
-        "sparklexrm.nuspec"
+        "lib/net462/LicenseTerms.docx",
+        "lib/net462/Microsoft.Crm.Sdk.Proxy.dll",
+        "lib/net462/Microsoft.Crm.Sdk.Proxy.xml",
+        "lib/net462/Microsoft.Xrm.Sdk.dll",
+        "lib/net462/Microsoft.Xrm.Sdk.xml",
+        "lib/net462/Other Redistributable.txt",
+        "lib/net462/Third Party Notices for Dynamics 365 SDK.docx",
+        "microsoft.crmsdk.coreassemblies.9.0.2.27.nupkg.sha512",
+        "microsoft.crmsdk.coreassemblies.nuspec"
       ]
+    },
+    "SparkleXrm.Tasks/1.0.0": {
+      "type": "project",
+      "path": "../SparkleXrm/spkl/SparkleXrm.Tasks/SparkleXrm.Tasks.csproj",
+      "msbuildProject": "../SparkleXrm/spkl/SparkleXrm.Tasks/SparkleXrm.Tasks.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
-      "SparkleXRM >= 7.3.0"
+    ".NETFramework,Version=v4.6.2": [
+      "Microsoft.CrmSdk.CoreAssemblies >= 9.0.2.27",
+      "SparkleXrm.Tasks >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -45,26 +74,30 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\repos\\Microsoft.Xrm.DevOps.Solutions\\Microsoft.Xrm.DevOps.Solutions\\Microsoft.Xrm.DevOps.Solutions.csproj",
+      "projectUniqueName": "C:\\Git\\Microsoft.Xrm.DevOps.Solutions-Github\\Microsoft.Xrm.DevOps.Solutions\\Microsoft.Xrm.DevOps.Solutions.csproj",
       "projectName": "Microsoft.Xrm.DevOps.Solutions",
-      "projectPath": "C:\\git\\repos\\Microsoft.Xrm.DevOps.Solutions\\Microsoft.Xrm.DevOps.Solutions\\Microsoft.Xrm.DevOps.Solutions.csproj",
+      "projectPath": "C:\\Git\\Microsoft.Xrm.DevOps.Solutions-Github\\Microsoft.Xrm.DevOps.Solutions\\Microsoft.Xrm.DevOps.Solutions.csproj",
       "packagesPath": "C:\\Users\\vogel\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\repos\\Microsoft.Xrm.DevOps.Solutions\\Microsoft.Xrm.DevOps.Solutions\\obj\\",
+      "outputPath": "C:\\Git\\Microsoft.Xrm.DevOps.Solutions-Github\\Microsoft.Xrm.DevOps.Solutions\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vogel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "net462"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "projectReferences": {}
+        "net462": {
+          "projectReferences": {
+            "C:\\Git\\Microsoft.Xrm.DevOps.Solutions-Github\\SparkleXrm\\spkl\\SparkleXrm.Tasks\\SparkleXrm.Tasks.csproj": {
+              "projectPath": "C:\\Git\\Microsoft.Xrm.DevOps.Solutions-Github\\SparkleXrm\\spkl\\SparkleXrm.Tasks\\SparkleXrm.Tasks.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -74,42 +107,15 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
+      "net462": {
         "dependencies": {
-          "SparkleXRM": {
+          "Microsoft.CrmSdk.CoreAssemblies": {
             "target": "Package",
-            "version": "[7.3.0, )"
-          }
-        },
-        "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
-        ],
-        "assetTargetFallback": true,
-        "warn": true,
-        "frameworkReferences": {
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
+            "version": "[9.0.2.27, )"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'SparkleXRM 7.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "SparkleXRM",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }
