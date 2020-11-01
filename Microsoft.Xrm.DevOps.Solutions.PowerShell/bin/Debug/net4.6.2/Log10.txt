@@ -1,4 +1,0 @@
-7:37:45 PM	CrmSvcUtil : CRM Service Utility [Version 9.1.0.28]
-7:37:45 PM	Loading config from 'C:\Git\Microsoft.Xrm.DevOps.Solutions-Github\Microsoft.Xrm.DevOps.Solutions.PowerShell\bin\Debug\net4.6.2\spkl.crmsvcutil.config'
-7:38:02 PM	Code written to C:\Users\vogel\AppData\Local\Temp\tmpEF0D.tmp.
-7:48:22 PM	CrmSvcUtil : CRM Service Utility [Version 9.1.0.28]

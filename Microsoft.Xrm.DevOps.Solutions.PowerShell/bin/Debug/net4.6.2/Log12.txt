@@ -1,5 +1,0 @@
-7:25:39 PM	
-7:48:22 PM	c 2019 Microsoft Corporation. All rights reserved
-7:48:22 PM	
-7:48:22 PM	Loading config from 'C:\Git\Microsoft.Xrm.DevOps.Solutions-Github\Microsoft.Xrm.DevOps.Solutions.PowerShell\bin\Debug\net4.6.2\spkl.crmsvcutil.config'
-7:48:41 PM	Code written to C:\Users\vogel\AppData\Local\Temp\tmpA775.tmp.
