@@ -20,6 +20,10 @@ steps:
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: 'git submodule update'
 
 - task: VSBuild@1
   inputs:
