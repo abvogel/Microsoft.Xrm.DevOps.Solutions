@@ -1,0 +1,3 @@
+[submodule "SparkleXrm"]
+	path = SparkleXrm
+	url = https://github.com/scottdurow/SparkleXrm.git
