@@ -28,10 +28,23 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+- task: VisualStudioTestPlatformInstaller@1
+  inputs:
+    packageFeedSelector: 'nugetOrg'
+    versionSelector: 'latestPreRelease'
+
 - task: VSTest@2
   inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    testSelector: 'testAssemblies'
+    testAssemblyVer2: |
+      **\*test*.dll
+      !**\*TestAdapter.dll
+      !**\obj\**
+    searchFolder: '$(System.DefaultWorkingDirectory)'
+    vsTestVersion: 'toolsInstaller'
+    runSettingsFile: 'Microsoft.Xrm.DevOps.Solutions.Tests\bin\Release\.runsettings'
+    overrideTestrunParameters: '-ConnectionString $(ConnectionString)'
+    codeCoverageEnabled: true
 
 - task: PublishBuildArtifacts@1
   inputs:
