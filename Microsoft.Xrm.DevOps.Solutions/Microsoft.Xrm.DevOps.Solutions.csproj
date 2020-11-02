@@ -3,14 +3,24 @@
   <PropertyGroup>
     <TargetFramework>net4.6.2</TargetFramework>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <UserSecretsId>93f0c50f-0552-4346-bc3c-8937681f677b</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.CrmSdk.CoreAssemblies" Version="9.0.2.27" />
+    <PackageReference Include="Microsoft.CrmSdk.CoreAssemblies" Version="9.0.2.28" />
+    <PackageReference Include="Microsoft.CrmSdk.XrmTooling.CoreAssembly" Version="9.1.0.51" />
+    <PackageReference Include="Microsoft.CrmSdk.XrmTooling.PackageDeployment" Version="9.1.0.46" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SparkleXrm\spkl\SparkleXrm.Tasks\SparkleXrm.Tasks.csproj" />
+    <Folder Include="Libraries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SparkleXrm.Tasks">
+      <HintPath>Libraries\SparkleXrm.Tasks.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
   </ItemGroup>
 
 </Project>

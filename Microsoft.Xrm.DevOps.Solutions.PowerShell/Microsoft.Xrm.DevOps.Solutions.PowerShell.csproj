@@ -6,24 +6,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.CrmSdk.CoreAssemblies" Version="9.0.2.27" />
     <PackageReference Include="Microsoft.PowerShell.5.ReferenceAssemblies" Version="1.1.0" />
     <PackageReference Include="System.Runtime" Version="4.3.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Microsoft.CrmSdk.CoreAssemblies" Version="9.0.2.27">
-      <Private>true</Private>
-    </Reference>
-    <Reference Include="Microsoft.PowerShell.5.ReferenceAssemblies" Version="1.1.0">
-      <Private>true</Private>
-    </Reference>
     <Reference Include="System.Runtime" Version="4.3.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Microsoft.Xrm.DevOps.Solutions\Microsoft.Xrm.DevOps.Solutions.csproj" />
-    <ProjectReference Include="..\SparkleXrm\spkl\CrmSvcUtilFilteringService\CrmSvcUtil.FilteringService.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,6 +35,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ref\Microsoft.Xrm.Sdk.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ref\Microsoft.Xrm.Tooling.CrmConnectControl.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ref\spkl.CrmSvcUtilExtensions.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
