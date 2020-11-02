@@ -7,6 +7,14 @@ namespace Microsoft.Xrm.DevOps.Solutions.Tests
     [TestClass]
     public class CrmEarlyBoundCode_UnitTests
     {
+        public static string _connectionString = string.Empty;
+
+        [ClassInitialize]
+        public static void TestClassInitialize(TestContext context)
+        {
+            _connectionString = context.Properties["ConnectionString"].ToString();
+        }
+
         [TestMethod]
         public void CreateClassHelper_WithEmptyConnectionNoEntities_ReturnsException()
         {
@@ -31,7 +39,7 @@ namespace Microsoft.Xrm.DevOps.Solutions.Tests
         [TestMethod]
         public void CreateClassHelper_WithNoEntity_ReturnsException()
         {
-            var ex = Assert.ThrowsException<Exception>(() => Solutions.Helpers.CreateEarlyBoundClass(ConfigurationManager.AppSettings["ConnectionString"], new String[0]));
+            var ex = Assert.ThrowsException<Exception>(() => Solutions.Helpers.CreateEarlyBoundClass(_connectionString, new String[0]));
             Assert.IsTrue(ex.Message.Equals("LogicalName is required when entity id is not specified"));
         }
 
@@ -39,14 +47,14 @@ namespace Microsoft.Xrm.DevOps.Solutions.Tests
         public void CreateClassHelper_WithInvalidEntity_ReturnsException()
         {
             string className = "asdf";
-            var ex = Assert.ThrowsException<Exception>(() => Solutions.Helpers.CreateEarlyBoundClass(ConfigurationManager.AppSettings["ConnectionString"], new String[] { className }));
+            var ex = Assert.ThrowsException<Exception>(() => Solutions.Helpers.CreateEarlyBoundClass(_connectionString, new String[] { className }));
             Assert.IsTrue(ex.Message.Equals(String.Format("Could not find an entity with name {0} and id 00000000-0000-0000-0000-000000000000.", className)));
         }
 
         [TestMethod]
         public void CreateClassHelper_WithSingleEntity_ReturnsCode()
         {
-            var earlyboundCode = Solutions.Helpers.CreateEarlyBoundClass(ConfigurationManager.AppSettings["ConnectionString"], new String[] { "contact" });
+            var earlyboundCode = Solutions.Helpers.CreateEarlyBoundClass(_connectionString, new String[] { "contact" });
             Assert.IsInstanceOfType(earlyboundCode, (new String[0]).GetType());
             Assert.IsTrue(earlyboundCode.Length > 0);
         }
@@ -54,7 +62,7 @@ namespace Microsoft.Xrm.DevOps.Solutions.Tests
         [TestMethod]
         public void CreateClassHelper_WithMultipleEntities_ReturnsCode()
         {
-            var earlyboundCode = Solutions.Helpers.CreateEarlyBoundClass(ConfigurationManager.AppSettings["ConnectionString"], new String[] { "contact", "account" });
+            var earlyboundCode = Solutions.Helpers.CreateEarlyBoundClass(_connectionString, new String[] { "contact", "account" });
             Assert.IsInstanceOfType(earlyboundCode, (new String[0]).GetType());
             Assert.IsTrue(earlyboundCode.Length > 0);
         }
