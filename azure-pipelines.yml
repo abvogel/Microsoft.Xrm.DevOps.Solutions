@@ -21,6 +21,11 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
+- task: NuGetCommand@2
+  inputs:
+    command: 'custom'
+    arguments: 'submodule update'
+
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
