@@ -42,7 +42,7 @@ steps:
       !**\obj\**
     searchFolder: '$(System.DefaultWorkingDirectory)'
     vsTestVersion: 'toolsInstaller'
-    runSettingsFile: 'bin\Release\.runsettings'
+    runSettingsFile: 'Microsoft.Xrm.DevOps.Solutions.Tests\bin\Release\.runsettings'
     overrideTestrunParameters: '-ConnectionString $(ConnectionString)'
     codeCoverageEnabled: true
 
