@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/MicrosoftXrmDevOps/Microsoft.Xrm.DevOps.Data/_apis/build/status/abvogel.Microsoft.Xrm.DevOps.Solutions?branchName=master)](https://dev.azure.com/MicrosoftXrmDevOps/Microsoft.Xrm.DevOps.Data/_build/latest?definitionId=3&branchName=master)
+
 # Microsoft.Xrm.DevOps.Solutions
 This library provides PowerShell commands to improve the development and release experience for Dynamics CRM with an eventual goal of making source code a first class citizen.
 
