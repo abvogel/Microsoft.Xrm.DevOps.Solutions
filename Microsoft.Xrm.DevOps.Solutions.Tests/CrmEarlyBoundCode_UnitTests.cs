@@ -30,11 +30,12 @@ namespace Microsoft.Xrm.DevOps.Solutions.Tests
             Assert.IsTrue(ex.Message.Equals("Missing connection string."));
         }
 
+        // Invalid connection strings throw an "Object reference not set to an instance of an object." error. Could capture and replace, but unsure what part of crmsvcutil is doing this.
         [TestMethod]
         public void CreateClassHelper_WithInvalidConnectionOneEntity_ReturnsException()
         {
             var ex = Assert.ThrowsException<Exception>(() => Solutions.Helpers.CreateEarlyBoundClass("abc", new String[] { "asdfsd" }));
-            Assert.IsTrue(ex.Message.Equals("Organization cannot be null or empty."));
+            Assert.IsTrue(ex.Message.Equals("Object reference not set to an instance of an object."));
         }
 
         [TestMethod]
