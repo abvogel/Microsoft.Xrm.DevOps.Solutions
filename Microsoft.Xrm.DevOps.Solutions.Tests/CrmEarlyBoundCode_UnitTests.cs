@@ -12,7 +12,8 @@ namespace Microsoft.Xrm.DevOps.Solutions.Tests
         [ClassInitialize]
         public static void TestClassInitialize(TestContext context)
         {
-            _connectionString = context.Properties["ConnectionString"].ToString();
+            if (context.Properties.Contains("ConnectionString"))
+                _connectionString = context.Properties["ConnectionString"].ToString();
         }
 
         [TestMethod]
