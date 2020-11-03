@@ -41,6 +41,9 @@
     <None Update="debug.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Microsoft.Xrm.DevOps.Solutions.PowerShell.psd1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="ref\CmdLine.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
